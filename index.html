@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Singh | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="fluid-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Vaibhav<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="hero-section" id="home">
+        <div id="hero-3d-container"></div>
+        <div class="edge-card">
+            <div class="status-badge">
+                <span class="dot"></span> Available for New Projects
+            </div>
+
+            <h1>Web Developer<span>.</span></h1>
+            <p>Architecting high-performance digital experiences.</p>
+
+            <div class="cta-group">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <!-- recent apps -->
+    <section class="about-section" id="about">
+
+        <div class="section-header">
+            <h2>System.<span>Architecture</span></h2>
+            <p>My core technologies and proficiencies.</p>
+        </div>
+
+        <div class="cards-stack" id="skills-stack">
+
+            <div class="skill-card">
+                <div class="card-icon">&lt;/&gt;</div>
+                <h3>Frontend Architecture</h3>
+                <p>Building high-performance, responsive user interfaces.</p>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-icon">{ }</div>
+                <h3>Backend Engineering</h3>
+                <p>Designing secure, scalable server-side systems.</p>
+                <ul class="skill-list">
+                    <li>Node.js & Express</li>
+                    <li>Python</li>
+                    <li>PostgreSQL</li>
+                    <li>RESTful APIs</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-icon">UI</div>
+                <h3>Design & Tooling</h3>
+                <p>Crafting premium aesthetics and managing workflows.</p>
+                <ul class="skill-list">
+                    <li>Figma & UI/UX</li>
+                    <li>Git & GitHub</li>
+                    <li>Web Animations</li>
+                    <li>Performance Optimization</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="tap-hint">Tap stack to expand</p>
+    </section>
+
+    <!-- 3dwork -->
+    <section class="scrolly-about" id="about">
+        
+        <div id="three-canvas-container"></div>
+
+        <div class="timeline-container">
+            
+            <div class="timeline-header">
+                <h2>The <span>Architecture</span> of My Journey.</h2>
+                <p>A track record of precision, built from the ground up.</p>
+            </div>
+
+            <div class="timeline-node">
+                <div class="node-year">Phase 01</div>
+                <div class="node-card">
+                    <h3>High School (10th PCM)</h3>
+                    <div class="score">97.4%</div>
+                    <p>Established the foundational logic and analytical skills required for complex problem-solving in Physics, Chemistry, and Math.</p>
+                </div>
+            </div>
+
+            <div class="timeline-node">
+                <div class="node-year">Phase 02</div>
+                <div class="node-card">
+                    <h3>Intermediate (12th ISC)</h3>
+                    <div class="score">96.5%</div>
+                    <p>Mastered advanced concepts, maintaining high-tier academic performance while shifting focus toward digital architecture.</p>
+                </div>
+            </div>
+
+            <div class="timeline-node">
+                <div class="node-year">Phase 03</div>
+                <div class="node-card">
+                    <h3>CUET Cleared</h3>
+                    <div class="score">Verified</div>
+                    <p>Successfully cracked the Central University Entrance Test, validating my technical aptitude on a national scale.</p>
+                </div>
+            </div>
+
+            <div class="timeline-node">
+                <div class="node-year">Present</div>
+                <div class="node-card">
+                    <h3>Lucknow University</h3>
+                    <div class="score">BCA</div>
+                    <p>Currently pursuing a Bachelor of Computer Applications. Actively bridging the gap between academic theory and high-end, real-world web development.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio-section" id="portfolio">
+        
+        <div class="section-header">
+            <h2>System.<span>Deployments</span></h2>
+            <p>A showcase of live, high-performance web applications.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-card" data-three-type="sphere">
+                <div class="card-3d-container"></div>
+                <h3>ProgramWala Complete Website</h3>
+                <p>An interactive, dimensional UI featuring custom 3D entrance animations and gate-splitting mechanics.</p>
+                <a href="https://programwalademo.netlify.app/" target="_blank" class="live-link">
+                    Netlify Live &lt;/&gt;
+                </a>
+            </div>
+
+            <div class="portfolio-card" data-three-type="octa">
+                <div class="card-3d-container"></div>
+                <h3>Coaching Website</h3>
+                <p>A clean, responsive platform for delivering interactive coaching content and resources along with a clean designed admin panel </p>
+                <a href="https://gyankoshdemo.netlify.app/" target="_blank" class="live-link">Netlify Live &lt;/&gt;</a>
+            </div>
+
+            <div class="portfolio-card" data-three-type="torus">
+                <div class="card-3d-container"></div>
+                <h3>Edu Pro Edtech website</h3>
+                <p>An advances and clean educational EDtech website integrated with the darkmode and responsive design made with HTML,CSS,JS and Bootstrap</p>
+                <a href="https://edupro-edtech-website.netlify.app/" target="_blank" class="live-link">Netlify Live &lt;/&gt;</a>
+            </div>
+
+            <div class="portfolio-card" data-three-type="cube">
+                <div class="card-3d-container"></div>
+                <h3>Gym Website</h3>
+                <p>An dark themed fitness platform with a modern design and responsive layout.</p>
+                <a href="https://vaibhav-gym-website.netlify.app/" target="_blank" class="live-link">Netlify Live &lt;/&gt;</a>
+            </div>
+            <div class="portfolio-card" data-three-type="ring">
+                <div class="card-3d-container"></div>
+                <h3>More Projects to come...</h3>
+                <p>Stay tuned for more exciting web development projects!</p>
+                <a href="#" target="_blank" class="live-link">Netlify Live &lt;/&gt;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-section" id="contact">
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Initialize <span>Connection</span>.</h2>
+                <p>Currently open for new opportunities, freelance projects, and high-end digital architecture roles.</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:your.email@gmail.com" class="terminal-link">System.Mail()</a>
+                    <a href="#" class="terminal-link">System.LinkedIn()</a>
+                    <a href="#" class="terminal-link">System.GitHub()</a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="secure-contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="> Enter Designation (Name)">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="> Enter Access Node (Email)">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required placeholder="> Transmit Payload (Message)"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">Execute_</button>
+                </form>
+                <div class="success-message" id="success-msg">Payload Transmitted Successfully.</div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
